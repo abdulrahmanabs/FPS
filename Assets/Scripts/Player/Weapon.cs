@@ -33,7 +33,7 @@ public class Weapon : MonoBehaviour
 
         ProcessRaycast();
         shootingEffect.Play();
-        cameraShake.Shake();
+        //cameraShake.Shake();
         PopupText.Instance.ShowPopup(hit.point, weaponData.damage.ToString(), Color.red,.2f,transform.gameObject);
 
     }

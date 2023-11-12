@@ -54,7 +54,7 @@ public class PopupText : MonoBehaviour
     {
         popup.transform.SetParent(popupParent);
         popup.transform.position =new Vector3(worldPosition.x,worldPosition.y,worldPosition.z+-1.5f) ;
-        popup.transform.LookAt((lookAt.transform.position));
+        popup.transform.LookAt(lookAt.transform);
        // popup.transform.position=worldPosition;
         popup.text = message;
         popup.color = textColor;
